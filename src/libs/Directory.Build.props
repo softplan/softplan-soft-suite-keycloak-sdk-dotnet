@@ -2,8 +2,8 @@
   <Import Project="..\Directory.Build.props" />
   <PropertyGroup Label="NuGet">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Authors>loud-technology and contributors</Authors>
-    <Copyright>Copyright © 2026 loud-technology</Copyright>
+    <Authors>Softplan and contributors</Authors>
+    <Copyright>Copyright © 2026 Softplan</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <IncludeSymbols>true</IncludeSymbols>

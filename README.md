@@ -2,7 +2,7 @@
 
 SDK .NET moderno e fortemente tipado para a Keycloak Admin REST API, gerado a partir de `keycloak-swagger.json` com [AutoSDK](https://www.nuget.org/packages/AutoSDK.CLI).
 
-> Este é um SDK comunitário mantido pela loud-technology e não é um SDK oficial do projeto Keycloak.
+> Este é um SDK comunitário mantido pela Softplan e não é um SDK oficial do projeto Keycloak.
 
 ## Recursos
 
@@ -21,13 +21,13 @@ SDK .NET moderno e fortemente tipado para a Keycloak Admin REST API, gerado a pa
 ## Instalação
 
 ```bash
-dotnet add package Loud.Technology.Keycloak
+dotnet add package Softplan.Soft.Suite.Keycloak
 ```
 
 ## Uso rápido
 
 ```csharp
-using Loud.Technology.Keycloak.Sdk;
+using Softplan.Soft.Suite.Keycloak.Sdk;
 
 using var client = new KeycloakClient(
     apiKey: "your-keycloak-access-token",
@@ -91,10 +91,10 @@ O script:
 ## Build e testes
 
 ```bash
-dotnet restore Loud.Technology.Keycloak.Sdk.slnx
-dotnet build Loud.Technology.Keycloak.Sdk.slnx --configuration Release --no-restore
-dotnet test Loud.Technology.Keycloak.Sdk.slnx --configuration Release --no-build
-dotnet pack src/libs/Keycloak/Loud.Technology.Keycloak.Sdk.csproj --configuration Release --no-build --output artifacts
+dotnet restore Softplan.Soft.Suite.Keycloak.Sdk.slnx
+dotnet build Softplan.Soft.Suite.Keycloak.Sdk.slnx --configuration Release --no-restore
+dotnet test Softplan.Soft.Suite.Keycloak.Sdk.slnx --configuration Release --no-build
+dotnet pack src/libs/Keycloak/Softplan.Soft.Suite.Keycloak.Sdk.csproj --configuration Release --no-build --output artifacts
 ```
 
 Os testes de contrato são executados sem rede e validam a URL, rota e autenticação Bearer geradas.

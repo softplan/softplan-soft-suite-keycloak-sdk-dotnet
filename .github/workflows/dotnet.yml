@@ -20,8 +20,8 @@ env:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   CONFIGURATION: Release
-  SOLUTION: Loud.Technology.Keycloak.Sdk.slnx
-  PROJECT: src/libs/Keycloak/Loud.Technology.Keycloak.Sdk.csproj
+  SOLUTION: Softplan.Soft.Suite.Keycloak.Sdk.slnx
+  PROJECT: src/libs/Keycloak/Softplan.Soft.Suite.Keycloak.Sdk.csproj
 
 jobs:
   build-test-pack:

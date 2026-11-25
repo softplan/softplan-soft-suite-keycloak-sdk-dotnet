@@ -1,0 +1,59 @@
+#nullable enable
+
+namespace Softplan.Soft.Suite.Keycloak.Sdk
+{
+    public partial interface IRolesByIdClient
+    {
+        /// <summary>
+        /// Return object stating whether role Authorization permissions have been initialized or not and a reference
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="realm"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Softplan.Soft.Suite.Keycloak.Sdk.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Softplan.Soft.Suite.Keycloak.Sdk.ManagementPermissionReference> PutAdminRealmsByRealmRolesByIdByRoleIdManagementPermissionsAsync(
+            string roleId,
+            string realm,
+
+            global::Softplan.Soft.Suite.Keycloak.Sdk.ManagementPermissionReference request,
+            global::Softplan.Soft.Suite.Keycloak.Sdk.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Return object stating whether role Authorization permissions have been initialized or not and a reference
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="realm"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Softplan.Soft.Suite.Keycloak.Sdk.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Softplan.Soft.Suite.Keycloak.Sdk.AutoSDKHttpResponse<global::Softplan.Soft.Suite.Keycloak.Sdk.ManagementPermissionReference>> PutAdminRealmsByRealmRolesByIdByRoleIdManagementPermissionsAsResponseAsync(
+            string roleId,
+            string realm,
+
+            global::Softplan.Soft.Suite.Keycloak.Sdk.ManagementPermissionReference request,
+            global::Softplan.Soft.Suite.Keycloak.Sdk.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Return object stating whether role Authorization permissions have been initialized or not and a reference
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <param name="realm"></param>
+        /// <param name="enabled"></param>
+        /// <param name="resource"></param>
+        /// <param name="scopePermissions"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Softplan.Soft.Suite.Keycloak.Sdk.ManagementPermissionReference> PutAdminRealmsByRealmRolesByIdByRoleIdManagementPermissionsAsync(
+            string roleId,
+            string realm,
+            bool? enabled = default,
+            string? resource = default,
+            global::System.Collections.Generic.Dictionary<string, string>? scopePermissions = default,
+            global::Softplan.Soft.Suite.Keycloak.Sdk.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

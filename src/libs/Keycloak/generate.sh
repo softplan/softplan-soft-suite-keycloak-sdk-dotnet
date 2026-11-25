@@ -21,7 +21,7 @@ fi
 rm -rf Generated
 
 dotnet tool run autosdk generate openapi.json \
-  --namespace Loud.Technology.Keycloak.Sdk \
+  --namespace Softplan.Soft.Suite.Keycloak.Sdk \
   --clientClassName KeycloakClient \
   --methodNamingConvention MethodAndPath \
   --targetFramework net10.0 \
