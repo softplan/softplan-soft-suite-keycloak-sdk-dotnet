@@ -21,7 +21,7 @@ SDK .NET moderno e fortemente tipado para a Keycloak Admin REST API, gerado a pa
 ## Instalação
 
 ```bash
-dotnet add package Softplan.Soft.Suite.Keycloak
+dotnet add package Softplan.SoftSuite.Keycloak
 ```
 
 ## Uso rápido
